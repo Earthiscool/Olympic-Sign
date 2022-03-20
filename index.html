@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class81</title>
+  </head>
+  <body>
+    <html>
+      <head>
+        <title>ADV - C81: OLYMPIC SYMBOL</title>
+      </head>
+      <body class="body_background">
+        <center>
+          <h1>Olympic Symbol</h1>
+          <canvas id="myCanvas" width="800" height="600"> </canvas>
+        </center>
+      </body>
+      <script>
+        canvas = document.getElementById("myCanvas");
+        ctx = canvas.getContext("2d");
+        ctx.beginPath();
+        ctx.strokeStyle = "grey";
+        ctx.lineWidth = 4;
+        ctx.rect(150, 143, 430, 200);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth = 5;
+        ctx.arc(250, 210, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 5;
+        ctx.arc(350, 210, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 5;
+        ctx.arc(450, 210, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "orange";
+        ctx.lineWidth = 5;
+        ctx.arc(300, 250, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "green";
+        ctx.lineWidth = 5;
+        ctx.arc(400, 250, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+      </script>
+      <style>
+        .body_background {
+          background-image: url("https://images.unsplash.com/photo-1595663823598-931cd6b854fe?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
+          background-image: center;
+          background-size: cover;
+        }
+        h1 {
+          color: aquamarine;
+          font-size: 40px;
+        }
+        #myCanvas {
+          border-width: 10px;
+          background-color: blueviolet;
+          border-style: ridge;
+        }
+        span {
+          font-size: 20px;
+        }
+      </style>
+    </html>
+  </body>
+</html>
